@@ -1,0 +1,25 @@
+Query Builder
+> Funcionalidades disponibilizadas por uma bibilioteca que possibilita escrever
+instruções SQL de maneira simplificada.
+
+-> Biblioteca - Knex.js
+>Select
+knex('usuarios')
+knex.select('*').from('usuarios')
+knex.select('id', 'nome').from('usuarios')
+//
+>Select Where
+knex('usuarios').where({ id })
+
+knex('usuarios').where('id', id)
+
+knex('usuarios').where({ id }).select('id', 'nome')
+//
+>Insert
+knex('usuarios').insert({ nome, email, senha })
+//
+>Update
+knex('usuarios').where({ id }).update({ nome, email, senha })
+//
+>Delete
+knex('usuarios').where({ id }).del()
