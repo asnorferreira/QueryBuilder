@@ -13,8 +13,10 @@ routes.get("/usuario/idade", controller.getAge);
 routes.get("/agenda", controller.getNotes);
 routes.get("/user", controller.getList);
 routes.get("/users/:id", middleware.validateUserId, controller.getListById);
+routes.get("/anotacoes", controller.getNotices);
 
-routes.post("/user", validateUser ,controller.postUser);
+routes.post("/user", middleware.validateUser, controller.postUser);
+routes.post("/:id/anotacao", middleware.validateNotes, controller.postNotes);
 
 routes.put("/agenda/:id", controller.putLoad);
 routes.put(

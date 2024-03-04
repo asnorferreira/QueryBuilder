@@ -12,6 +12,8 @@ import { getListById } from "./users.js";
 import { postUser } from "./users.js";
 import { putUser } from "./users.js";
 import { deleteUser } from "./users.js";
+import { postNotes } from "./agenda.js";
+import { getNotices } from "./agenda.js"
 
 export default {
   getDrugs,
@@ -28,4 +30,6 @@ export default {
   postUser,
   putUser,
   deleteUser,
+  postNotes,
+  getNotices,
 };

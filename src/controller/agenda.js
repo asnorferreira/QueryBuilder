@@ -32,3 +32,31 @@ export const deleteNotes = async (req, res) => {
   const deleteNotes = await knex("agenda").del().where({ id }).returning("id");
   return res.status(201).json(deleteNotes);
 };
+
+export const postNotes = async (req, res) => {
+  const { nota } = req.body;
+  const { id } = req.params;
+  try {
+    const notes = await knex("anotacoes")
+      .insert({ agenda_id: id, nota })
+      .returning("*");
+    return res.status(201).json(notes);
+  } catch (error) {
+    console.error("Error ao cadastrar anotações: ", error);
+    return res.status(500).json(error.message);
+  }
+};
+
+export const getNotices = async (req, res) => {
+  try {
+    const getNote = await knex("anotacoes").join(
+      "agenda",
+      "anotacoes.agenda_id",
+      "agenda.id"
+    ).select("anotacoes.*", "agenda.nome");
+    return res.status(200).json(getNote);
+  } catch (error) {
+    console.error("Error ao listar anotações: ", error);
+    return res.status(500).json(error.message);
+  }
+};
