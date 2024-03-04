@@ -6,6 +6,11 @@ export const getAgeYoung = async (req, res) => {
 };
 
 export const getAge = async (req, res) => {
-  const young = await knex("usuarios").select("idade").where('idade', '>=', 18).groupBy('idade').count().debug();
+  const young = await knex("usuarios")
+    .select("idade")
+    .where("idade", ">=", 18)
+    .groupBy("idade")
+    .count()
+    .debug();
   return res.status(201).json(young);
 };

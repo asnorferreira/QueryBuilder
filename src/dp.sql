@@ -73,3 +73,59 @@ INSERT INTO "usuarios" (id,nome,email,telefone,idade,cadastro) VALUES (61,'Wayne
 INSERT INTO "usuarios" (id,nome,email,telefone,idade,cadastro) VALUES (71,'Latifah Y. Medina','Cum@magnaa.org','(98) 1777-6299',50,'2019-06-14 16:11:18'),(72,'Kirk Y. Page','scelerisque.lorem.ipsum@metusurnaconvallis.edu','(04) 9651-3941',78,'2020-03-28 06:20:01'),(73,'Rylee Conner','sem.elit@Donecelementum.edu','(06) 3664-8496',46,'2019-05-21 23:03:14'),(74,'Idona Waller','eget.odio.Aliquam@sempertellusid.net','(31) 2009-6489',80,'2020-05-02 20:03:30'),(75,'Benedict House','nisi.Mauris@in.co.uk','(35) 0259-4097',26,'2021-03-06 11:29:14'),(76,'Odessa Frederick','purus@convallisincursus.org','(83) 5708-1688',73,'2020-01-29 09:19:51'),(77,'Lani T. Walter','elit@ante.com','(84) 6652-8287',73,'2019-11-21 00:29:25'),(78,'Avram Merritt','Donec.tempus@egestasligula.edu','(81) 6957-3652',51,'2019-10-06 11:31:18'),(79,'Idola Love','sed.pede.nec@neccursusa.net','(73) 6859-5340',69,'2019-02-21 08:15:47'),(80,'Rajah Hansen','consectetuer.cursus@interdumenim.org','(17) 0103-5675',29,'2020-02-27 20:51:33');
 INSERT INTO "usuarios" (id,nome,email,telefone,idade,cadastro) VALUES (81,'Nicholas Vinson','Donec.tincidunt@Nunc.net','(78) 5948-4167',69,'2019-11-30 00:24:46'),(82,'Lucas Patton','aliquet.nec@acmattisornare.edu','(54) 5211-8660',19,'2019-08-19 00:33:40'),(83,'Quynn Ross','vehicula.risus.Nulla@et.ca','(14) 6305-3815',71,'2021-03-19 00:33:23'),(84,'Sylvia M. Lopez','ad.litora.torquent@adipiscinglobortisrisus.edu','(73) 6248-6319',70,'2018-08-26 22:38:56'),(85,'Carissa Dawson','elit@acmattisornare.com','(09) 9699-0680',13,'2020-06-12 08:23:31'),(86,'Linda Fitzpatrick','risus.at@urnaconvallis.com','(43) 4915-0512',67,'2019-08-17 08:04:48'),(87,'Minerva Lloyd','a.feugiat.tellus@molestietellusAenean.net','(72) 8157-9842',76,'2018-06-24 19:24:57'),(88,'Lani Michael','Nulla@ligula.com','(74) 7562-8785',74,'2020-08-04 10:51:06'),(89,'Azalia R. Wiggins','id.ante.Nunc@musAeneaneget.org','(76) 1458-4686',66,'2020-10-27 18:04:20'),(90,'Thor P. Russo','Nunc.mauris@vulputate.org','(81) 4249-9637',61,'2020-02-29 02:06:52');
 INSERT INTO "usuarios" (id,nome,email,telefone,idade,cadastro) VALUES (91,'Kelsie T. Chan','nibh.Donec@ac.com','(62) 2712-0350',36,'2021-01-13 23:03:59'),(92,'Priscilla Goff','turpis.Aliquam.adipiscing@porttitortellus.net','(48) 6346-9028',49,'2019-07-06 01:20:01'),(93,'Rhonda B. Lawson','tellus@acarcuNunc.com','(47) 6077-0703',70,'2021-03-27 19:49:54'),(94,'Hiram P. Mcmahon','metus@commodohendreritDonec.edu','(47) 9118-7426',56,'2020-08-03 12:31:31'),(95,'Lillian Y. Britt','dui@Duisatlacus.net','(19) 8910-0152',17,'2019-06-25 21:09:10'),(96,'Dexter N. Horn','cursus.in@molestietortor.co.uk','(88) 0244-0709',34,'2020-10-20 07:34:59'),(97,'Elizabeth Marquez','id.libero@vitaepurus.org','(79) 2638-3728',44,'2021-04-19 17:59:00'),(98,'Addison G. Valenzuela','vulputate@ullamcorper.org','(27) 8023-8313',53,'2018-05-17 07:42:04'),(99,'Harper V. Little','nunc@afacilisisnon.edu','(31) 8695-4715',16,'2020-10-08 20:19:05'),(100,'Phyllis Mayo','per.conubia@iaculis.co.uk','(45) 9859-5898',62,'2018-06-12 03:57:11');
+
+drop table agenda;
+drop table farmacia;
+drop table usuarios;
+
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('yellow','Alprazolam',40),('green','Endocet',67),('blue','Lisinopril/Hydrochlorothiazide',74),('yellow','Metformin HCl',62),('blue','Alprazolam',12),('black','Ventolin HFA',38),('yellow','Advair Diskus',51),('green','Pravastatin Sodium',77),('black','Azithromycin',31),('yellow','Lisinopril',78);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('green','Trazodone HCl',12),('yellow','Trazodone HCl',24),('red','Omeprazole (Rx)',72),('blue','Zolpidem Tartrate',29),('black','Ciprofloxacin HCl',55),('green','Lexapro',8),('yellow','Triamterene/Hydrochlorothiazide',64),('red','Prednisone',57),('blue','Tramadol HCl',35),('blue','Atenolol',73);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('green','Lisinopril',42),('red','Simvastatin',50),('blue','Vitamin D (Rx)',55),('yellow','APAP/Codeine',66),('blue','Alprazolam',51),('black','Hydrochlorothiazide',5),('red','Lantus',13),('green','Amoxicillin',30),('blue','Oxycodone/APAP',13),('green','Diovan HCT',16);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('yellow','Lisinopril',8),('blue','Glipizide',55),('blue','Omeprazole (Rx)',2),('yellow','Suboxone',20),('blue','Fluoxetine HCl',22),('yellow','Lovastatin',60),('red','Gabapentin',21),('green','Atenolol',32),('black','Seroquel',63),('blue','Alprazolam',45);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+(null,'Carvedilol',56),('green','Simvastatin',31),('green','Fluoxetine HCl',32),(null,'TriNessa',24),('blue','Pantoprazole Sodium',75),('red','Omeprazole (Rx)',35),('yellow','Lisinopril',62),('green','Omeprazole (Rx)',11),('red','Zyprexa',65),('blue','Lorazepam',77);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('red','Metoprolol Succinate',72),('yellow','Metformin HCl',1),('blue','Alendronate Sodium',54),('black','Amitriptyline HCl',19),('blue','Potassium Chloride',65),('green','Fluticasone Propionate',33),('green','Tramadol HCl',73),('red','Allopurinol',69),('red','Ventolin HFA',13),('green','Cephalexin',22);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('green','Diovan',26),('green','Azithromycin',48),('green','Metformin HCl',24),(null,'Alprazolam',70),('black','Tramadol HCl',5),('green','Carvedilol',1),('blue','Simvastatin',58),('red','Doxycycline Hyclate',41),('red','Tamsulosin HCl',74),('yellow','Glipizide',24);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('red','Hydrocodone/APAP',20),('green','Furosemide',54),('green','Metformin HCl',67),(null,'Januvia',65),('blue','Levothyroxine Sodium',28),('black','Sertraline HCl',14),('black','Alprazolam',61),('red','Famotidine',37),('yellow','Lisinopril/Hydrochlorothiazide',77),('green','Ranitidine HCl',10);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('red','TriNessa',61),('red','Premarin',59),('yellow','Folic Acid',75),(null,'Amlodipine Besylate',65),('blue','Citalopram HBr',14),('red','Omeprazole (Rx)',7),('red','Metoprolol Succinatee',61),('blue','Prednisone',67),('yellow','Triamcinolone Acetonide',0),('black','Furosemide',1);
+INSERT INTO "farmacia" (categoria,medicamento,estoque) VALUES 
+('black','Spiriva Handihaler',34),('yellow','LevothyroxineSodium',6),(null,'Lisinopril',17),('green','Levoxyl',50),('red','Ciprofloxacin HCl',39),('green','Lexapro',3),('yellow','Potassium Chloride',59),('red','Gianvi',8),('blue','Hydrochlorothiazide',4),('black','Methylprednisolone',41);
+
+INSERT INTO "agenda" (nome, email, telefone) VALUES 
+('Neve E. Finch','lacinia.at@nonummyutmolestie.org','(83) 0124-7289'),
+('Jaime Cochran','ipsum.porta@turpisvitaepurus.co.uk','(88) 3163-6961'),
+('Mia Castillo','fringilla.cursus@aliquetsemut.net','(37) 9218-3566'),
+('Francesca Faulkner','enim.sit.amet@Aeneaneuismodmauris.edu','(71) 0532-8316'),
+('Ignatius Coffey','orci.Phasellus@Quisque.org','(78) 2943-0071'),
+('Stuart O. Fisher','suscipit.nonummy.Fusce@molestiedapibusligula.org','(32) 5997-0271'),
+('Gretchen F. Woodard','diam.Proin.dolor@a.org','(71) 8255-4173'),
+('Axel Parks','Suspendisse.commodo@Fusce.co.uk','(70) 2104-5173'),
+('Vladimir R. Knowles','consectetuer@Nuncullamcorpervelit.com','(31) 2577-1110');
+
+INSERT INTO "agenda" (nome, email, telefone) VALUES 
+('Iola D. Osborne','scelerisque.sed@semperrutrum.net','(47) 5129-9536'),
+('Ina P. Frost','risus.varius@venenatisvelfaucibus.net','(07) 5162-0035'),
+('Lani J. Cortez','hendrerit.Donec.porttitor@lacus.ca','(48) 2220-3535'),
+('Maryam G. Estrada','molestie.tellus@NuncmaurisMorbi.net','(73) 7896-2491'),
+('Elmo Myers','magna@gravidasitamet.edu','(29) 4874-8870');
+
+INSERT INTO "agenda" (nome, email, telefone) VALUES 
+('Dana N. Miles','purus.Nullam.scelerisque@milacinia.ca','(89) 7607-2040'),
+('Yael C. Cain','lacinia.vitae@egestasa.ca','(79) 3076-6921'),
+('Candice U. Poole','magna@semconsequatnec.org','(32) 5681-9099'),
+('Stacy N. Gonzalez','erat.Vivamus.nisi@Aeneaneuismod.ca','(26) 7116-1893'),
+('Leslie Lott','egestas.blandit.Nam@nascetur.com','(60) 0009-0024');
+
+
+INSERT INTO "usuarios" (nome,email,telefone,idade,cadastro) VALUES ('Neve E. Finch','lacinia.at@nonummyutmolestie.org','(83) 0124-7289',43,'2018-11-12 23:35:38'),('Jaime Cochran','ipsum.porta@turpisvitaepurus.co.uk','(88) 3163-6961',31,'2021-03-26 08:46:36'),('Mia Castillo','fringilla.cursus@aliquetsemut.net','(37) 9218-3566',68,'2021-03-08 09:39:34'),('Francesca Faulkner','enim.sit.amet@Aeneaneuismodmauris.edu','(71) 0532-8316',54,'2018-11-09 10:19:01'),('Ignatius Coffey','orci.Phasellus@Quisque.org','(78) 2943-0071',50,'2019-04-22 08:26:09'),('Stuart O. Fisher','suscipit.nonummy.Fusce@molestiedapibusligula.org','(32) 5997-0271',50,'2020-05-25 20:13:12'),('Gretchen F. Woodard','diam.Proin.dolor@a.org','(71) 8255-4173',31,'2019-01-27 01:25:19'),('Axel Parks','Suspendisse.commodo@Fusce.co.uk','(70) 2104-5173',42,'2021-02-23 23:02:27'),('Vladimir R. Knowles','consectetuer@Nuncullamcorpervelit.com','(31) 2577-1110',46,'2019-08-26 10:50:35'),('Iola D. Osborne','scelerisque.sed@semperrutrum.net','(47) 5129-9536',45,'2019-05-22 15:05:16');
+INSERT INTO "usuarios" (nome,email,telefone,idade,cadastro) VALUES ('Ina P. Frost','risus.varius@venenatisvelfaucibus.net','(07) 5162-0035',55,'2019-07-01 10:41:56'),('Lani J. Cortez','hendrerit.Donec.porttitor@lacus.ca','(48) 2220-3535',39,'2019-08-17 22:32:45'),('Maryam G. Estrada','molestie.tellus@NuncmaurisMorbi.net','(73) 7896-2491',79,'2019-12-28 15:31:40'),('Elmo Myers','magna@gravidasitamet.edu','(29) 4874-8870',48,'2019-05-03 10:37:45'),('Dana N. Miles','purus.Nullam.scelerisque@milacinia.ca','(89) 7607-2040',37,'2021-03-17 11:06:30'),('Yael C. Cain','lacinia.vitae@egestasa.ca','(79) 3076-6921',21,'2020-01-20 14:47:54'),('Candice U. Poole','magna@semconsequatnec.org','(32) 5681-9099',63,'2019-12-23 01:30:40'),('Stacy N. Gonzalez','erat.Vivamus.nisi@Aeneaneuismod.ca','(26) 7116-1893',31,'2018-09-29 12:35:15'),('Leslie Lott','egestas.blandit.Nam@nascetur.com','(60) 0009-0024',42,'2021-04-08 23:08:55'),('Robin M. Ferguson','montes.nascetur@Aliquamtinciduntnunc.edu','(82) 5363-4673',36,'2019-09-29 19:43:15');
+INSERT INTO "usuarios" (nome,email,telefone,idade,cadastro) VALUES ('Rose K. Hensley','porttitor@Incondimentum.com','(05) 2610-8887',43,'2019-07-25 12:07:12'),('Victor L. Short','est.Nunc.ullamcorper@dignissimtemporarcu.org','(14) 1579-4257',56,'2018-07-17 14:30:12'),('Wesley Mooney','Aliquam@porttitorinterdum.com','(81) 9298-6164',26,'2018-06-20 23:18:13'),('Keelie F. Beard','a.neque.Nullam@orciDonecnibh.co.uk','(23) 6216-0003',30,'2019-06-27 09:56:59'),('Kylee A. Riggs','tempor.diam@lacuspedesagittis.edu','(68) 7445-1812',14,'2018-07-11 13:17:30'),('Guy L. Quinn','tellus.non.magna@dictum.net','(46) 6273-8724',75,'2020-08-16 09:30:58'),('Kay Levy','eu.odio@Nuncquisarcu.org','(56) 9462-3150',36,'2019-04-19 07:03:05'),('Constance Sparks','Phasellus.ornare@DonecestNunc.org','(13) 5178-5501',42,'2018-05-13 18:11:50'),('Yolanda V. Mckenzie','nec@nislQuisquefringilla.net','(01) 7343-8238',56,'2021-03-06 18:14:00'),('Medge Q. Meyers','consectetuer.rhoncus@amalesuada.org','(30) 6095-3412',40,'2018-06-27 12:24:35');
+INSERT INTO "usuarios" (nome,email,telefone,idade,cadastro) VALUES ('Lyle D. Compton','Donec.tempor.est@orciDonecnibh.co.uk','(89) 8943-6198',19,'2020-12-19 13:28:37'),('Clare R. Frost','mauris.sagittis@dignissim.com','(85) 7405-7459',35,'2018-12-11 06:35:00'),('Morgan V. Townsend','sem.eget@semper.ca','(17) 8295-1066',48,'2020-08-08 20:10:12');
